@@ -29,5 +29,10 @@
     <h2>Pluto prova a comprare roba:</h2>
     <div><strong><?php echo $pluto->name ?></strong> prova a comprare <strong><?php echo $forbici->name ?> : <?php  echo $forbici->possoComprarlo($pluto->getPortafoglio())?></strong></div>
     <div><strong><?php echo $pluto->name ?></strong> prova a comprare <strong><?php echo $zaino->name ?> : <?php  echo $zaino->possoComprarlo($pluto->getPortafoglio())?></strong></div>
+
+    <h2>Pluto compra roba:</h2>
+    <div><strong><?php echo $pluto->name ?></strong> prova a comprare <strong><?php echo $forbici->name ?> : <?php  echo $pluto->compra($forbici->vendi($pluto->getPortafoglio()),$forbici->getCosto())?></strong></div>
+    <div>LA DISPONIBILITA DELLE FORBICI ORA è ZERO</div>
+    <div><strong><?php echo $pluto->name ?></strong> prova a comprare <strong><?php echo $forbici->name ?> : <?php  echo $pluto->compra($forbici->vendi($pluto->getPortafoglio()),$forbici->getCosto())?></strong></div>
 </body>
 </html>

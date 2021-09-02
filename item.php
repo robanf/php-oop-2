@@ -1,4 +1,5 @@
 <?php
+    require_once 'compratore.php';
 
     class Item{
         public $name;
@@ -39,5 +40,14 @@
                     return 'il prodotto non è disponibile e non ha abbastanza soldi per comprarlo';
                 }
            }
+       }
+
+       public function vendi($soldi){
+            if($soldi>=$this->costo && $this->disponibilità){
+                    $this->disponibilità=false;
+                    return true;
+            }
+            return false;
+            
        }
     }
