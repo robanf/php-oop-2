@@ -2,7 +2,11 @@
     require_once 'compratore.php';
     require_once 'item.php';
 
-    
+    $franco= new Compratore('Franco',10);
+    $pluto= new Compratore('Pluto', 100000);
+
+    $forbici= new Item('forbici', 12, true);
+    $zaino= new Item('zaino',30,false);
 
 ?>
 

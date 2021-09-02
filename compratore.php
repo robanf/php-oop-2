@@ -1,13 +1,12 @@
 <?php
 
     class Compratore{
-        protected $name
-        protected $cognome
-        protected $portafoglio
+        protected $name;
+        protected $portafoglio;
 
-        function __construct($_name,$_cognome){
+        function __construct($_name,$_portafoglio){
             $this->name=$_name;
-            $this->cognome=$_cognome;
+            $this->portafoglio=$_portafoglio;
         }
 
         private setPortafoglio($soldi){
