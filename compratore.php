@@ -1,7 +1,7 @@
 <?php
 
     class Compratore{
-        protected $name;
+        public $name;
         protected $portafoglio;
 
         function __construct($_name,$_portafoglio){
@@ -9,10 +9,10 @@
             $this->portafoglio=$_portafoglio;
         }
 
-        private setPortafoglio($soldi){
+        private function setPortafoglio($soldi){
             $this->portafoglio=$soldi;
         }
-        protected getPortafoglio(){
+        public function getPortafoglio(){
             return $this->portafoglio;
         }
     }
